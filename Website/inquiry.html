@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Submit your enquiry to Mofokeng's Enterprise - Find a job or register your business" />
+    <title>Enquire | Mofokeng's Enterprise</title>
+    <link rel="stylesheet" href="Css/Style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Mofokeng's Enterprise Logo" />
+            <h1>Mofokeng's <span>Enterprise</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero" style="background-image: url('images/inquiring.jpg');">
+            <div class="container">
+                <h1>Enquire Now</h1>
+                <p>Are you looking for work or do you need to hire staff? Complete the form below.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="form-section">
+            <div class="container">
+                <div class="form-container">
+                    <!-- The form tag creates a form where people can type information -->
+                    <form id="enquiry-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <!-- The input tag creates a box where people can type text -->
+                            <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiry-type">Enquiry Type *</label>
+                            <!-- The select tag creates a dropdown menu -->
+                            <select id="enquiry-type" name="enquiryType">
+                                <option value="">Select an option</option>
+                                <option value="job-seeker">I am looking for work</option>
+                                <option value="employer">I am looking to hire staff</option>
+                                <option value="volunteer">I want to volunteer</option>
+                                <option value="sponsor">I want to sponsor</option>
+                                <option value="training">I want to attend training</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Work Experience</label>
+                            <!-- The textarea tag creates a larger text box for longer messages -->
+                            <textarea id="experience" name="experience" rows="3" placeholder="Briefly describe your work experience"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your enquiry..."></textarea>
+                        </div>
+
+                        <!-- The submit button sends the form -->
+                        <button type="submit" class="btn-primary">Submit Enquiry</button>
+                    </form>
+
+                    <!-- This div shows a message after the form is submitted -->
+                    <div id="form-response"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Mofokeng's Enterprise</h4>
+                <p>Reducing unemployment in Uitenhage through job placement and skills development.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>Email: info@mofokengsenterprise.co.za</p>
+                <p>Phone: +27 82 123 4567</p>
+                <p>Uitenhage, Eastern Cape</p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mofokeng's Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
